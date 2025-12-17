@@ -1,0 +1,110 @@
+---
+title: Getting Started with Abe Challah
+description: A beginner's guide to navigating the blog, subscribing to updates, and discovering content tailored to tech and entertainment interests.
+---
+
+## Overview
+
+Welcome to Abe Challah, your go-to blog for technology insights, entertainment news, tutorials, tools, and exclusive deals. You discover content blending tech tutorials with sci-fi references and pop culture gems, like the latest on `ALIEN 8`. Start here to navigate effortlessly, subscribe for updates, and dive into categories tailored to your interests.
+
+<Callout kind="tip">
+  Bookmark the homepage for quick access to featured posts and trending deals.
+</Callout>
+
+## Quick Navigation
+
+Use the top navigation bar to jump between sections. Key areas include Home, Tools, Deals, Tutorials, and About.
+
+<Columns cols={3}>
+  <Card title="Tools" icon="wrench" href="/tools">
+    Discover productivity apps, browser extensions, and developer utilities.
+  </Card>
+  <Card title="Deals" icon="tag" href="/deals">
+    Find curated discounts on gadgets, software, and entertainment subscriptions.
+  </Card>
+  <Card title="Tutorials" icon="book-open" href="/tutorials">
+    Step-by-step guides on coding, setup, and tech hacks.
+  </Card>
+</Columns>
+
+## Subscribe to Updates
+
+Stay informed with new posts on tech tools and entertainment deals. Choose your preferred method below.
+
+<Steps>
+  <Step title="Email Newsletter" icon="mail">
+    Sign up for weekly digests delivered to your inbox.
+    
+    Visit the footer signup form and enter your email.
+  </Step>
+  <Step title="RSS Feed" icon="rss">
+    Add the RSS feed to your reader for instant updates.
+    
+    Copy this URL: `https://abechallah.com/rss.xml`
+  </Step>
+  <Step title="Social Media" icon="share-2">
+    Follow on platforms for real-time shares and discussions.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,RSS Reader">
+  ```javascript
+  // Fetch latest posts in your browser console
+  fetch('https://abechallah.com/rss.xml')
+    .then(response => response.text())
+    .then(data => console.log(data));
+  ```
+  ```xml
+  <!-- Add to your RSS reader like Feedly -->
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Abe Challah RSS</title>
+      <link>https://abechallah.com/rss.xml</link>
+    </channel>
+  </rss>
+  ```
+</CodeGroup>
+
+## Explore Categories
+
+Tailor your experience by category. Switch between tech-focused and entertainment content.
+
+<Tabs>
+  <Tab title="Tools" icon="tool">
+    Explore essential software and hardware recommendations.
+    
+    | Tool          | Category     | Use Case                  |
+    |---------------|--------------|---------------------------|
+    | VS Code       | Development  | Code editing              |
+    | Notion        | Productivity | Note-taking and planning  |
+    | Raycast       | macOS        | Spotlight alternative     |
+    
+    <Callout kind="success">
+      Most tools include affiliate links for easy purchases.
+    </Callout>
+  </Tab>
+  <Tab title="Deals" icon="percent">
+    Hunt for savings on tech and entertainment.
+    
+    - Gadgets under `$100`
+    - Streaming service bundles
+    - Software lifetime licenses
+    
+    Check daily for flash sales.
+  </Tab>
+  <Tab title="Tutorials" icon="play-circle">
+    Hands-on guides to get you started.
+    
+    Begin with "Setting up a Home Lab" or "Sci-Fi Movie API Builds".
+  </Tab>
+</Tabs>
+
+## Advanced Tips
+
+<Expandable title="Customize Your Feed" default-open="false">
+  Use RSS filters to focus on specific tags like `tools` or `deals`.
+  
+  In your reader, add query: `https://abechallah.com/rss.xml?tag=tools`
+</Expandable>
+
+You now navigate Abe Challah confidently. Explore tools for productivity boosts, snag deals on favorites, and subscribe to never miss `ALIEN 8` updates or tech tutorials. Happy reading!

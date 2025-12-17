@@ -1,0 +1,136 @@
+---
+title: Changelog
+description: A record of updates to the Abe Challah blog, including new content releases, site improvements, and feature additions.
+---
+
+## Recent Updates
+
+Stay informed about the latest additions to Abe Challah, your go-to blog for technology tools, entertainment articles, tutorials, and exclusive deals. You receive updates on new posts about sci-fi classics like ALIEN 8, coding tips, and site enhancements that improve your reading experience.
+
+<Columns cols={3}>
+  <Card title="New Posts" icon="book-open" href="/posts">
+    Discover recent articles on tech gadgets and pop culture.
+  </Card>
+  <Card title="Site Features" icon="settings" href="/features">
+    Explore improvements like dark mode and faster loading.
+  </Card>
+  <Card title="Subscribe" icon="bell" href="/subscribe">
+    Get notifications for fresh content and deals.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  Check the RSS feed at `/rss.xml` to follow updates automatically.
+</Callout>
+
+## How to Stay Updated
+
+Follow these steps to ensure you never miss a post or site improvement.
+
+<Steps>
+  <Step title="Subscribe to RSS" icon="rss">
+    Add `/rss.xml` to your feed reader like Feedly or Inoreader.
+  </Step>
+  <Step title="Follow on Social" icon="share-2">
+    Connect via X (formerly Twitter) or Mastodon for quick updates.
+  </Step>
+  <Step title="Enable Notifications" icon="bell">
+    Turn on browser notifications for instant alerts on new content.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Features" icon="star">
+    Track new tools and articles added to the blog.
+  </Tab>
+  <Tab title="Bug Fixes" icon="bug">
+    Review resolutions for reported issues.
+  </Tab>
+</Tabs>
+
+## Update History
+
+Review the detailed changelog below, organized by release.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added dedicated sci-fi section with ALIEN 8 retrospective
+- Introduced deal tracker for tech gadgets under $50
+- Enhanced search with fuzzy matching for better results
+
+## Improvements
+
+- Optimized image loading for `<20%` faster page speeds
+- Updated tutorial templates with embedded code playgrounds
+
+## Bug Fixes
+
+- Fixed mobile navigation overlap on landscape mode
+- Resolved broken links in older entertainment posts
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Launched weekly tools roundup newsletter signup
+- Integrated syntax highlighting for all code tutorials
+
+## Improvements
+
+- Redesigned homepage with featured carousels
+
+## Bug Fixes
+
+- Corrected RSS feed validation errors
+- Patched comment spam filtering
+
+<CodeGroup tabs="RSS,Email">
+```xml
+<!-- RSS feed example -->
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <item>
+      <title>New Tools Post</title>
+      <link>https://abechallah.com/posts/tools-2024</link>
+    </item>
+  </channel>
+</rss>
+```
+```html
+<!-- Newsletter signup form -->
+<form action="https://abechallah.com/subscribe">
+  <input type="email" placeholder="your@email.com" required />
+  <button type="submit">Subscribe</button>
+</form>
+```
+</CodeGroup>
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core blog launch with 20+ initial posts on tech and entertainment
+- Added categories for tutorials, deals, and sci-fi reviews
+
+## Breaking Changes
+
+- Migrated to new URL structure: `/posts/[slug]`
+
+## Bug Fixes
+
+- Initial setup fixes for deployment
+
+</Update>
+
+<Expandable title="How to Contribute Feedback" default-open="false">
+
+Share your thoughts on updates via the contact form or GitHub discussions. You help shape future releases.
+
+</Expandable>

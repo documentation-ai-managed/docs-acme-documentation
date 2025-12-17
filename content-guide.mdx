@@ -1,0 +1,128 @@
+---
+title: Exploring Articles and Tutorials
+description: Detailed guidance on the types of content available, including in-depth tutorials, tech tools, and sci-fi/pop culture articles.
+---
+
+## Overview
+
+Discover the rich variety of articles and tutorials on ACME Documentation. You explore in-depth tech tools, step-by-step tutorials, and engaging sci-fi/pop culture pieces. Each post delivers practical value with a humorous touch, blending technical depth and entertainment. Navigate formats like quick tips, comprehensive guides, and deal roundups to enhance your tech skills and stay entertained.
+
+<Columns cols={3}>
+  <Card title="Tech Tools" icon="zap" href="#">
+    Reviews and recommendations for productivity apps and developer utilities.
+  </Card>
+  <Card title="Sci-Fi Articles" icon="book-open" href="#">
+    Deep dives into `ALIEN 8` lore, sci-fi theories, and pop culture analysis.
+  </Card>
+  <Card title="Deals & Resources" icon="tag" href="#">
+    Curated discounts on gadgets, software, and learning materials.
+  </Card>
+</Columns>
+
+## Article Formats and Topics
+
+ACME Documentation organizes content into focused formats. You find tech tool spotlights that highlight features and use cases, sci-fi essays exploring themes like alien invasions, and deal alerts with verified discounts.
+
+| Format       | Topics Covered                  | Typical Length |
+|--------------|---------------------------------|---------------|
+| Tool Reviews | Apps, CLI utilities, extensions | 800-1500 words |
+| Sci-Fi Deep Dives | Movies, books, theories        | 1000+ words   |
+| Deal Roundups | Software, hardware promotions  | 500-800 words |
+
+<Callout kind="tip">
+  Subscribe to the RSS feed at `/rss.xml` to get new articles directly.
+</Callout>
+
+## Tutorial Structure
+
+Tutorials follow a clear, actionable structure. You start with prerequisites, move through numbered steps, and end with troubleshooting.
+
+<Steps>
+  <Step title="Prerequisites" icon="check-circle">
+    Review required tools and knowledge level.
+
+    ```bash
+    node --version
+    npm --version
+    ```
+  </Step>
+  <Step title="Setup" icon="download">
+    Install dependencies.
+
+    <CodeGroup tabs="npm,yarn">
+    ```bash
+    npm init -y
+    npm install express
+    ```
+    ```bash
+    yarn init -y
+    yarn add express
+    ```
+    </CodeGroup>
+  </Step>
+  <Step title="Build" icon="code">
+    Create your first server.
+
+    ```javascript
+    const express = require('express');
+    const app = express();
+
+    app.get('/', (req, res) => {
+      res.send('Hello from ACME!');
+    });
+
+    app.listen(3000, () => {
+      console.log('Server running on port 3000');
+    });
+    ```
+  </Step>
+  <Step title="Test & Deploy" icon="rocket">
+    Run locally and deploy to your platform.
+  </Step>
+</Steps>
+
+## Finding Deals and Resources
+
+Access deals through multiple channels. You use the search bar for specific tools or browse categories.
+
+<Tabs>
+  <Tab title="Newsletter" icon="mail">
+    Sign up for weekly digests.
+
+    ```html
+    <form action="https://api.example.com/subscribe">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    ```
+  </Tab>
+  <Tab title="RSS Feeds" icon="rss">
+    Add to your reader.
+
+    - Tech Tools: `/rss/tools.xml`
+    - Tutorials: `/rss/tutorials.xml`
+    - Deals: `/rss/deals.xml`
+  </Tab>
+  <Tab title="Search Tips" icon="search">
+    Use queries like `"Node.js tutorial"` or `"ALIEN 8 deals"`.
+  </Tab>
+</Tabs>
+
+<Expandable title="Advanced Tutorial Topics" default-open="false">
+
+Explore specialized tutorials on API integrations, React patterns, and sci-fi-inspired coding challenges.
+
+```javascript
+// Example: Fetch sci-fi API data
+async function fetchAlienData() {
+  const response = await fetch('https://api.example.com/aliens');
+  const data = await response.json();
+  console.log(`Found ${data.count} aliens`);
+}
+```
+
+</Expandable>
+
+<Callout kind="info">
+  Check back weekly for fresh content blending tech and entertainment.
+</Callout>
